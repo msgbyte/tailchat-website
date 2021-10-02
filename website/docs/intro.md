@@ -2,34 +2,28 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 概述
 
-Let's discover **Docusaurus in less than 5 minutes**.
+`TailChat` 是一款插件化易拓展的开源 IM 应用。可拓展架构赋予 `TailChat` 无限可能性。
 
-## Getting Started
+前端微内核架构 + 后端微服务架构 使得`TailChat`能够驾驭任何定制化/私有化的场景
 
-Get started by **creating a new site**.
+## 特性
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- 完整的即时通讯基础能力
+- 插件化架构的赋予的自由拓展能力
+- 微服务架构赋予的水平拓展能力
 
-## Generate a new site
+## 技术栈
 
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+- 前端
+  - `React`
+  - `Redux`
+  - `MiniStar`
+  - `tailwindcss`
+  - `iconify`
+- 后端: 
+  - `Nodejs`
+  - `Socket.io`
+  - `koa`
+  - `moleculer`
