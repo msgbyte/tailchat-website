@@ -4,32 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: '易于使用',
+    Svg: require('../../static/img/undraw_Website_setup_re_d4y9.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <code>TailChat</code> 的基本设计借鉴了 <code>discord</code>, 但是与 <code>discord</code> 不同的是, <code>TailChat</code> 使用面板这一概念而不是频道。这让群组的能力不仅仅只局限于聊天。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: '始于插件',
+    Svg: require('../../static/img/undraw_design_components_9vy6.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <code>TailChat</code> 专心设计了一套独有的插件系统，这让外部能力深度集成到 <code>TailChat</code> 成为可能
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: '面向开源',
+    Svg: require('../../static/img/undraw_open_source_1qxw.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <code>TailChat</code> 是一个开源软件，任何人都能给TailChat提交自己想要的能力。我们始终相信开源的力量能让一个应用变得更好
       </>
     ),
   },
