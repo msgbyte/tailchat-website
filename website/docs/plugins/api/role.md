@@ -16,3 +16,5 @@ sidebar_position: 4
 - `sidebar-group`: 群组中的侧边栏
 - `content-personal`: 个人主页中的内容
 - `content-group`: 群组页面中的内容
+- `modal`: 模态框
+- `modal-mask`: 模态框的遮罩层
