@@ -100,19 +100,6 @@ import { useGroupPanelParams } from '@capital/common';
 const { groupId, panelId } = useGroupPanelParams();
 ```
 
-### useCurrentGroupPanelInfo
-
-在`hooks`中获取当前面板的信息
-
-```typescript
-import { useCurrentGroupPanelInfo } from '@capital/common';
-
-const groupPanelInfo = useCurrentGroupPanelInfo();
-```
-
-返回类型: [GroupPanel](#grouppanel) | null
-
-
 ### openModal
 
 打开一个模态框
