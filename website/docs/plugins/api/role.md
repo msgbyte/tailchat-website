@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # data-tc-role
 
-`TailChat Role` 是一种通过`data-*`方式来标识DOM的一种方式，表明该节点在`TailChat`中的角色, 开发者可以通过这来找到对应角色的DOM节点
+`Tailchat Role` 是一种通过`data-*`方式来标识DOM的一种方式，表明该节点在`Tailchat`中的角色, 开发者可以通过这来找到对应角色的DOM节点
 
 例如: `[data-tc-role=navbar]`
 

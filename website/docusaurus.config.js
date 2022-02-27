@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'TailChat',
+  title: 'Tailchat',
   tagline: '一个插件化易拓展的开源 IM 应用',
   url: 'https://github.com/msgbyte/tailchat', // TODO: 待修改成文档主页
   baseUrl: '/',
@@ -14,9 +14,9 @@ module.exports = {
   projectName: 'tailchat', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'TailChat',
+      title: 'Tailchat',
       logo: {
-        alt: 'TailChat Logo',
+        alt: 'Tailchat Logo',
         src: 'img/logo.svg',
       },
       items: [

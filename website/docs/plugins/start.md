@@ -22,7 +22,7 @@ npm install --global mini-star
 
 在项目中执行: `ministar buildPlugin` 来编译插件
 
-> 值得一提的是， 虽然 `TailChat` 并没有强制规定插件命名规范，但是还是推荐使用 `反域名` 的命名方式(类似于java中的包命名), 然后对插件中的部件，使用 `/` 进行分割
+> 值得一提的是， 虽然 `Tailchat` 并没有强制规定插件命名规范，但是还是推荐使用 `反域名` 的命名方式(类似于java中的包命名), 然后对插件中的部件，使用 `/` 进行分割
 > 
 > 如:
 > 插件名: `com.msgbyte.webview`

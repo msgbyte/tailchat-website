@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_Website_setup_re_d4y9.svg').default,
     description: (
       <>
-        <code>TailChat</code> 的基本设计借鉴了 <code>discord</code>, 但是与 <code>discord</code> 不同的是, <code>TailChat</code> 使用面板这一概念而不是频道。这让群组的能力不仅仅只局限于聊天。
+        <code>Tailchat</code> 的基本设计借鉴了 <code>discord</code>, 但是与 <code>discord</code> 不同的是, <code>Tailchat</code> 使用面板这一概念而不是频道。这让群组的能力不仅仅只局限于聊天。
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_design_components_9vy6.svg').default,
     description: (
       <>
-        <code>TailChat</code> 专心设计了一套独有的插件系统，这让外部能力深度集成到 <code>TailChat</code> 成为可能
+        <code>Tailchat</code> 专心设计了一套独有的插件系统，这让外部能力深度集成到 <code>Tailchat</code> 成为可能
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_open_source_1qxw.svg').default,
     description: (
       <>
-        <code>TailChat</code> 是一个开源软件，任何人都能给TailChat提交自己想要的能力。我们始终相信开源的力量能让一个应用变得更好
+        <code>Tailchat</code> 是一个开源软件，任何人都能给Tailchat提交自己想要的能力。我们始终相信开源的力量能让一个应用变得更好
       </>
     ),
   },
