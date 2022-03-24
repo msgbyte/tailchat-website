@@ -26,14 +26,25 @@ cd tailchat
 npm install -g pnpm # 如果在此之前没有安装过pnpm
 
 pnpm install
-cd web
-SERVICE_URL=http://127.0.0.1:11000 pnpm build
+cd web # 切换到web目录
 ```
 
+创建/修改 `.env` 设置环境变量
+
+```ini
+SERVICE_URL=http://127.0.0.1:11000
+```
 环境变量:
 - `SERVICE_URL`: 后端服务的地址
+- `PORT`: 前端开发环境的端口(`pnpm dev`)
 
-使用任意方式代理 `web/dist` 目录即可。
+编译代码
+```
+pnpm build
+```
+
+使用http代理 `web/dist` 目录即可。
+- 可用方案: `cd web && npx http-server dist`
 
 ## 后端服务
 
