@@ -16,7 +16,15 @@ cd tailchat
 
 ### 编译代码
 
+**请确保安装了node环境（建议node版本大于 16.x）**
+
+编译服务依赖 `pnpm` 进行依赖管理
+
+> pnpm 是 npm 的替代品, 更多信息可见 [https://pnpm.io/](https://pnpm.io/)
+
 ```bash
+npm install -g pnpm # 如果在此之前没有安装过pnpm
+
 pnpm install
 cd web
 SERVICE_URL=http://127.0.0.1:11000 pnpm build
