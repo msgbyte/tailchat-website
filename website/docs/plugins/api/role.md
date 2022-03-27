@@ -1,8 +1,7 @@
 ---
 sidebar_position: 4
+title: "data-tc-role"
 ---
-
-# data-tc-role
 
 `Tailchat Role` 是一种通过`data-*`方式来标识DOM的一种方式，表明该节点在`Tailchat`中的角色, 开发者可以通过这来找到对应角色的DOM节点
 

@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
+title: 概述
 ---
-
-# 概述
 
 `Tailchat` 是一款插件化易拓展的开源 IM 应用。可拓展架构赋予 `Tailchat` 无限可能性。
 

@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: 环境变量
 ---
-
-# 环境变量
 
 ## 前端编译环境变量
 

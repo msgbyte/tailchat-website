@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: Icon 图标
 ---
-
-# Icon 图标
 
 ```ts
 import { Icon } from '@capital/component';

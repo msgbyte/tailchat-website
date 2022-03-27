@@ -1,8 +1,7 @@
 ---
 sidebar_position: 99
+title: 开发环境
 ---
-
-# 开发环境
 
 对于开发环境的搭建，tailchat 提供了非常简单快捷的方式
 

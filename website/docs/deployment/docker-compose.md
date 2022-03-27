@@ -1,8 +1,7 @@
 ---
 sidebar_position: 4
+title: Docker Compose 部署服务端
 ---
-
-# Docker Compose 部署服务端
 
 ## 安装环境
 

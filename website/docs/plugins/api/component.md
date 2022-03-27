@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: "@capital/component"
 ---
-
-# @capital/component
 
 ### Button
 

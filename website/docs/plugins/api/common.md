@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
+title: "@capital/common"
 ---
-
-# @capital/common
 
 ## 注册
 

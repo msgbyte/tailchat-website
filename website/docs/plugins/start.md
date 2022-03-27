@@ -1,8 +1,7 @@
 ---
 sidebar_position: 1
+title: 开始开发插件
 ---
-
-# 开始开发插件
 
 ## 认识 MiniStar
 
