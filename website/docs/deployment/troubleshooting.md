@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-title: 开放平台
+title: 常见问题
 ---
 
 如果开放平台部署在代理之后，如果出现访问 `/open/.well-known/openid-configuration` 结果的json中endpoint不正确的情况，请尝试修改代理的配置。
