@@ -40,15 +40,15 @@ vim .env
 编辑`.env`的配置为自己相关的上下文
 
 ```bash
-yarn install # 安装环境变量
-yarn dev # 启动开发服务器
+pnpm install # 安装环境变量
+pnpm dev # 启动开发服务器
 ```
 
 ## 前端
 
 ```bash
 cd web
-yarn install # 安装依赖
-yarn plugins:all # 编译插件
-yarn dev # 进入开发模式
+pnpm install # 安装依赖
+pnpm plugins:all # 编译插件
+pnpm dev # 进入开发模式
 ```
