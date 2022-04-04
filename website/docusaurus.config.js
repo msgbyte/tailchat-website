@@ -16,7 +16,7 @@ const themeConfig = {
         position: 'left',
         label: '文档',
       },
-      // {to: '/blog', label: '博客', position: 'left'},
+      {to: '/blog', label: '博客', position: 'left'},
       {
         href: 'https://github.com/msgbyte/tailchat',
         label: 'GitHub',
@@ -67,7 +67,7 @@ const themeConfig = {
     //     ],
     //   },
     // ],
-    copyright: `Copyright © ${new Date().getFullYear()} MsgByte, Inc. Built with Docusaurus.`,
+    copyright: `Copyright © ${new Date().getFullYear()} MsgByte, Inc. Built with Docusaurus and ❤.`,
   },
   prism: {
     theme: lightCodeTheme,
