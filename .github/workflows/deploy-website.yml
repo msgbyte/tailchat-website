@@ -34,8 +34,18 @@ jobs:
       run: pnpm install
     - name: Build page
       run: pnpm build
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
+    # - name: Deploy to gh-pages
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./website/build
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@master
+      env:
+        VERSION: ${{ env.GITHUB_SHA }}
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./website/build
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.ORG_ID}}
+        vercel-project-id: ${{ secrets.PROJECT_ID}}
+        working-directory: ./
+        vercel-args: '--prod'
