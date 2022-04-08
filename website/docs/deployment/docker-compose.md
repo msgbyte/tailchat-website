@@ -54,8 +54,16 @@ pnpm build # 构建项目
 
 #### 使用docker-compose构建服务端
 
+> 在启动前需要检查代码环境变量
+
+修改 `docker-compose.env` 文件的配置，以下内容推荐修改:
+- `API_URL` 对外可访问的url地址，用于文件服务访问
+- `SECRET` 服务端加密秘钥，用于生成Token. 默认为 `tailchat`
+
+
 ```bash
 cd tailchat-server
+docker-compose build
 docker-compose up -d
 ```
 

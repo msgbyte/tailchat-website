@@ -25,6 +25,12 @@ function HomepageHeader() {
   );
 }
 
+function HomepageVideo() {
+  return <div className={styles.videoContainer}>
+    <iframe className={styles.videoIframe} src="//player.bilibili.com/player.html?aid=340398093&bvid=BV1394y1Z76n&cid=568332564&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+  </div>
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -33,6 +39,8 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <HomepageVideo />
+
         <HomepageFeatures />
       </main>
     </Layout>
