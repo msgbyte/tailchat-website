@@ -50,7 +50,9 @@ export SERVICE_URL=http://127.0.0.1:11000 # 配置服务端地址，这里的127
 pnpm build # 构建项目
 ```
 
-构建完毕后会生成一个`tailchat/web/dist`目录，将该目录托管到任意网页托管服务器即可
+构建完毕后会生成一个`tailchat/web/dist`目录，将该目录托管到任意网页托管服务器即可(如使用`http-server`进行静态代理或者直接上传到`oss`)
+
+> NOTICE: 因为webpack编译需要比较大的内存资源占用，在服务器资源不足的场合建议使用本地编译完毕以后上传到服务端
 
 #### 使用docker-compose构建服务端
 
