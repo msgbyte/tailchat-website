@@ -13,7 +13,7 @@ git clone https://github.com/msgbyte/tailchat
 cd tailchat
 ```
 
-### 编译代码
+### 手动编译
 
 **请确保安装了node环境（建议node版本大于 16.x）**
 
@@ -45,6 +45,25 @@ pnpm build
 使用http代理 `web/dist` 目录即可。
 - 可用方案: `cd web && npx http-server dist`
 
+### 使用 docker-compose 一键编译并部署
+
+请确保已经安装了:
+- docker
+- docker-compose
+
+*如果不会安装docker可以查看 [安装教程](./install-docker.md) *
+
+```bash
+docker-compose build
+SERVICE_URL=http://[Server IP]:11000 docker-compose up -d
+```
+
+访问 `http://[Server IP]:11011` 即可访问到Tailchat的前端页面
+
+**`[Server IP]`请换成服务端的ip或者绑定的域名, 11000为服务端默认端口号**
+
+**如果有条件的建议使用https协议，在此不进行赘述**
+
 ## 后端服务
 
 拉取后端源码:
@@ -62,6 +81,8 @@ cd tailchat-server
 请确保已经安装了:
 - docker
 - docker-compose
+
+*如果不会安装docker可以查看 [安装教程](./install-docker.md) *
 
 修改 `docker-compose.env` 中的 `API_URL` 配置，将其改为服务端可访问的url
 
