@@ -13,7 +13,47 @@ git clone https://github.com/msgbyte/tailchat
 cd tailchat
 ```
 
-### 手动编译
+### 方法一: 使用预编译好的镜像 使用docker-compose 一键启动
+
+请确保已经安装了:
+- docker
+- docker-compose
+
+*如果不会安装docker可以查看 [安装教程](./install-docker.md) *
+
+```bash
+docker pull moonrailgun/tailchat:latest
+docker tags moonrailgun/tailchat:latest tailchat-web
+SERVICE_URL=http://[Server IP]:11000 docker-compose up -d
+```
+
+访问 `http://[Server IP]:11011` 即可访问到Tailchat的前端页面
+
+**`[Server IP]`请换成服务端的ip或者绑定的域名, 11000为服务端默认端口号**
+
+**如果有条件的建议使用https协议，在此不进行赘述**
+
+### 方法二: 使用 docker-compose 一键编译并部署
+
+请确保已经安装了:
+- docker
+- docker-compose
+
+*如果不会安装docker可以查看 [安装教程](./install-docker.md) *
+
+```bash
+docker-compose build
+SERVICE_URL=http://[Server IP]:11000 docker-compose up -d
+```
+
+访问 `http://[Server IP]:11011` 即可访问到Tailchat的前端页面
+
+**`[Server IP]`请换成服务端的ip或者绑定的域名, 11000为服务端默认端口号**
+
+**如果有条件的建议使用https协议，在此不进行赘述**
+
+
+### 方法三: 手动编译
 
 **请确保安装了node环境（建议node版本大于 16.x）**
 
@@ -43,26 +83,7 @@ pnpm build
 ```
 
 使用http代理 `web/dist` 目录即可。
-- 可用方案: `cd web && npx http-server dist`
-
-### 使用 docker-compose 一键编译并部署
-
-请确保已经安装了:
-- docker
-- docker-compose
-
-*如果不会安装docker可以查看 [安装教程](./install-docker.md) *
-
-```bash
-docker-compose build
-SERVICE_URL=http://[Server IP]:11000 docker-compose up -d
-```
-
-访问 `http://[Server IP]:11011` 即可访问到Tailchat的前端页面
-
-**`[Server IP]`请换成服务端的ip或者绑定的域名, 11000为服务端默认端口号**
-
-**如果有条件的建议使用https协议，在此不进行赘述**
+- 可用方案: `npx http-server-spa ./web/dist/`
 
 ## 后端服务
 
@@ -76,7 +97,24 @@ cd tailchat-server
 
 ### 单节点部署
 
-#### docker-compose 一键部署(建议)
+#### 方法一: docker-compose 拉取预编译好的镜像并部署 (推荐)
+
+请确保已经安装了:
+- docker
+- docker-compose
+
+*如果不会安装docker可以查看 [安装教程](./install-docker.md) *
+
+修改 `docker-compose.env` 中的 `API_URL` 配置，将其改为服务端可访问的url
+
+在项目根目录下执行
+```bash
+docker pull moonrailgun/tailchat-server:latest
+docker tags moonrailgun/tailchat-server:latest tailchat-server
+docker-compose up -d
+```
+
+#### 方法二: docker-compose 一键构建并部署
 
 请确保已经安装了:
 - docker
