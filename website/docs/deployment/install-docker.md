@@ -41,6 +41,8 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 *PS: `docker-compose-plugin`提供了`docker compose`命令，用法同`docker-compose`*
 
+> 如果`docker ps`显示守护进程没有启动的话可以执行以下命令启动: `sudo systemctl start docker`
+
 ## 单独安装 docker-compose
 
 如果购买的服务器已经预装了docker, 想要单独安装docker-compose的话可以看本节内容:
