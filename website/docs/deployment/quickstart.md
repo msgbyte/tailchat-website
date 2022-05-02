@@ -23,7 +23,7 @@ cd tailchat
 
 ```bash
 docker pull moonrailgun/tailchat:latest
-docker tags moonrailgun/tailchat:latest tailchat-web
+docker tag moonrailgun/tailchat:latest tailchat-web
 SERVICE_URL=http://[Server IP]:11000 docker-compose up -d
 ```
 
@@ -82,8 +82,9 @@ SERVICE_URL=http://127.0.0.1:11000
 pnpm build
 ```
 
-使用http代理 `web/dist` 目录即可。
-- 可用方案: `npx http-server-spa ./web/dist/`
+使用任意http代理 `web/dist` 目录即可，注意需要支持spa的fallback机制
+- 使用 `http-server-spa` 进行前端文件代理: `npx http-server-spa ./web/dist index.html 11011`
+  - `11011` 为 `Tailchat` 的默认端口号，可以改成任意想要的端口
 
 ## 后端服务
 
@@ -110,7 +111,7 @@ cd tailchat-server
 在项目根目录下执行
 ```bash
 docker pull moonrailgun/tailchat-server:latest
-docker tags moonrailgun/tailchat-server:latest tailchat-server
+docker tag moonrailgun/tailchat-server:latest tailchat-server
 docker-compose up -d
 ```
 
