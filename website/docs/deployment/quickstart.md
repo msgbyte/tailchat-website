@@ -3,6 +3,10 @@ sidebar_position: 1
 title: 快速开始
 ---
 
+<iframe src="//player.bilibili.com/player.html?aid=853731563&bvid=BV1aL4y1c7QM&cid=710880091&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" />
+
+[在B站观看](https://www.bilibili.com/video/BV1aL4y1c7QM)
+
 ## 前端代码
 
 拉取前端源码:
