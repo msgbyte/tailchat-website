@@ -41,7 +41,7 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 *PS: `docker-compose-plugin`提供了`docker compose`命令，用法同`docker-compose`*
 
-> 如果`docker ps`显示守护进程没有启动的话可以执行以下命令启动: `sudo systemctl start docker`
+> 如果`docker ps`显示守护进程没有启动(Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?)的话可以执行以下命令启动: `sudo systemctl start docker`
 
 ## 单独安装 docker-compose
 

@@ -13,6 +13,8 @@ title: 概述
 - 文件传输
 - 聊天记录
 
+同时 `tailchat-meeting` 还可以作为独立单品存在，无需登录即可快速发起/加入会议
+
 ### 项目仓库
 
 - 开源地址: [https://github.com/msgbyte/tailchat-meeting](https://github.com/msgbyte/tailchat-meeting)
