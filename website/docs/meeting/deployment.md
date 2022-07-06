@@ -24,10 +24,11 @@ git clone https://github.com/msgbyte/tailchat-meeting --depth=1
   - 443
 - tailchat-meeting
   - 13001
+  - 40000-49999(用于RTC服务, 动态占用)
 - redis
   - 6379
-  
-**以上端口均会在宿主机上暴露，为了服务器安全着想建议配置合适的防火墙策略，仅暴露必要的端口443**
+
+**以上端口均会在宿主机上暴露，为了服务器安全着想建议配置合适的防火墙策略，仅暴露必要的端口443和40000-49999**
 
 ```bash
 cd tailchat-meeting/compose
